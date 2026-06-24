@@ -4,7 +4,7 @@ function Global() {
     const [posts, setPosts] = useState([]);
 
     const authentication = async () => {
-        const response = await fetch("http://localhost:3000/api/", {
+        const response = await fetch("https://backend-1-lsgp.onrender.com/api/", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
