@@ -9,6 +9,7 @@ import Profile from "./component/profile";
 import Global from "./component/global";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./component/protectedx";
+import Demo from "./component/demo";
 
 
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path="/demo" element={<Demo/>} />
         <Route path="/" element={<Global />} />
         <Route path="/login" element={<Login />} />
 
