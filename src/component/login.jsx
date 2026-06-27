@@ -8,23 +8,23 @@ function Login() {
   // const navigate = useNavigate();
   // const {storeTokenInLS}=useAuth()
   
-  const handleLogin = async () => {
+  // const handleLogin = async () => {
     
-    const response = await fetch("https://backend-1-lsgp.onrender.com/api/login", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // body: JSON.stringify({
-      //   email,
-      //   password,
-      // }),
-    });
+  //   const response = await fetch("https://backend-1-lsgp.onrender.com/api/login", {
+  //     method: "GET",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     // body: JSON.stringify({
+  //     //   email,
+  //     //   password,
+  //     // }),
+  //   });
     
-    const data = await response.json();
+    // const data = await response.json();
 
-    console.log("Full response:", data);
-    console.log("Token:", data.token);
+    // console.log("Full response:", data);
+    // console.log("Token:", data.token);
     
     // if (data.success) {
     //   storeTokenInLS(data.token);
