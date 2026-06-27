@@ -11,7 +11,7 @@ function Login() {
   const handleLogin = async () => {
     
     const response = await fetch("https://backend-1-lsgp.onrender.com/api/login", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
