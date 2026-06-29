@@ -12,7 +12,7 @@ function Home() {
       return;
     }
   
-    const response = await fetch("https://backend-1-lsgp.onrender.com/api/home", {
+    const response = await fetch("https://social-kf94.onrender.com/api/home", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

@@ -15,7 +15,7 @@ function Profile() {
       return;
     }
   
-    const response = await fetch("https://backend-1-lsgp.onrender.com/api/profile", {
+    const response = await fetch("https://social-kf94.onrender.com/api/profile", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

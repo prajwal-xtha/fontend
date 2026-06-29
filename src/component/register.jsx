@@ -9,7 +9,7 @@ function Register() {
   const navigate = useNavigate();
   const handleRegister = async () => {
 
-    const response = await fetch("https://backend-1-lsgp.onrender.com/api/register", {
+    const response = await fetch("https://social-kf94.onrender.com/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

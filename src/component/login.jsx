@@ -3,42 +3,42 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../storage/auth";
 function Login() {
   
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
-  // const navigate = useNavigate();
-  // const {storeTokenInLS}=useAuth()
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const {storeTokenInLS}=useAuth()
   
-  // const handleLogin = async () => {
+  const handleLogin = async () => {
     
-  //   const response = await fetch("https://backend-1-lsgp.onrender.com/api/login", {
-  //     method: "GET",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     // body: JSON.stringify({
-  //     //   email,
-  //     //   password,
-  //     // }),
-  //   });
+    const response = await fetch("https://social-kf94.onrender.com/api/login", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      // body: JSON.stringify({
+      //   email,
+      //   password,
+      // }),
+    });
     
-    // const data = await response.json();
+    const data = await response.json();
 
-    // console.log("Full response:", data);
-    // console.log("Token:", data.token);
+    console.log("Full response:", data);
+    console.log("Token:", data.token);
     
-    // if (data.success) {
-    //   storeTokenInLS(data.token);
+    if (data.success) {
+      storeTokenInLS(data.token);
     
-    //   console.log("Stored token:", localStorage.getItem("token"));
+      console.log("Stored token:", localStorage.getItem("token"));
     
-    //   navigate("/home");
-    // }
-// else{
-//   alert("wrong ")
-// }
+      navigate("/home");
+    }
+else{
+  alert("wrong ")
+}
 
-    // console.log(data);
-    // console.log("login sucessfully done")
+    console.log(data);
+    console.log("login sucessfully done")
 
   };
 
